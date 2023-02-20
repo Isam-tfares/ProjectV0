@@ -1,0 +1,731 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-sign {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    height: 577px;
+}
+
+/*      Style index           */
+.form-admin {
+    margin: 20px auto;
+    padding: 40px 20px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(35 228 200);
+    height: 280px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 1% 3%;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+}
+
+#btn {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.error {
+    color: #FF0000;
+}
+
+.other_link {
+    border: none;
+    background-color: #444;
+    padding: 5px 10px;
+    font-weight: bolder;
+    display: block;
+    margin: 10px auto;
+}
+
+.other_link a {
+    text-decoration: none;
+    color: white;
+}
+
+.messageError {
+    color: #FF0000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*   Style  header   */
+#Header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #394547;
+    color: white;
+}
+
+#Header a {
+    text-decoration: none;
+    color: white;
+}
+
+#account {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbarre {
+    padding: 0;
+}
+
+#navbarre ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navbarre ul li {
+    margin-left: 10px;
+}
+
+
+
+/* ####  end header*/
+.List {
+    background-color: #b8b8b8;
+    width: 80%;
+    margin: 10px auto 0px;
+}
+
+.Etudiant-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.AddS{
+    margin: 20px auto;
+    width: 120px;
+
+}
+.edit {
+    padding: 4px 8px;
+    color: #0099ff;
+    background-color: white;
+    font-weight: 800;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+.edit:hover {
+    padding: 4px 8px;
+    background-color: #0099ff;
+    color: white;
+    font-weight: 800;
+}
+
+.delete {
+    padding: 4px 7px;
+    color: #FF0000;
+    background-color: white;
+    font-weight: 800;
+    transition-property: all;
+    transition-duration: .5s;
+    text-decoration: none;
+}
+
+.delete:hover {
+    background-color: #FF0000;
+    color: white;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+/*   main  */
+.main {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0px 40px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-child {
+    margin: 10px 30px;
+    padding: 30px;
+
+    width: 17%;
+    height: auto;
+    text-align: center;
+
+}
+
+.main-child:first-of-type {
+    background-color: #73d78a;
+}
+
+.main-child:last-of-type {
+    background-color: #73d7d7;
+}
+
+.main-child:nth-of-type(2) {
+    background-color: #d3d32e;
+}
+
+.main-child a {
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/*   edit   */
+.edit_form {
+    background-color: #394547;
+    width: 400px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 25px;
+}
+
+.edit_form .inpt {
+    width: 80%;
+    height: 22px;
+}
+
+.edit_form .btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width: 100px;
+    height: 30px;
+    font-weight: 800;
+    padding: 5px 10px 7px 10px;
+}
+
+.error-edit {
+    color: white;
+    font-weight: 500;
+    background-color: #FF0000;
+    padding: 5px 9px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* CLASSES  */
+.class-name {
+    height: 200px;
+    margin: 0 0 20px 0;
+    background-color: #34bdff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-name h1 {
+    margin: 0;
+    color: white;
+}
+
+.classs {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px 30px;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid rgb(232, 149, 5);
+    background-color: #34bdff;
+    padding-bottom: 20px;
+}
+
+.class>div {
+    height: 50%;
+    align-items: center;
+    display: flex;
+    font-weight: 800;
+}
+
+.class a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+}
+
+.AddClass {
+    text-align: center;
+
+}
+
+.AddClass .btn {
+    color: black;
+    font-weight: 900;
+    background-color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.AddClass .btn:hover {
+    color: white;
+    font-weight: 900;
+    background-color: #000;
+    border: none;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.see {
+    padding: 4px 7px;
+    color: black;
+    background-color: white;
+    font-weight: 800;
+    width: 60px;
+}
+
+.see:hover {
+    color: white;
+    background-color: black;
+}
+
+.class .delete {
+    width: 60px;
+    margin-top: 5px;
+    color: #FF0000;
+}
+
+.class .delete:hover {
+    color: white;
+    transition-duration: .5s;
+}
+
+/*   class */
+.class-parent {
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+}
+
+.class-parent .students {
+    width: 20%;
+    min-height: 300px;
+    font-size: 18px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 10px 15px;
+    border: 2px solid black;
+}
+
+.class-parent .students ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.class-parent .students ul li:not(:last-of-type) {
+    padding: 12px 0px;
+    background-color: #d1cece;
+    margin-bottom: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.class-parent .students ul li:not(:last-of-type)>div {
+    position: absolute;
+    top: -20%;
+    right: -6%;
+}
+
+.class-parent .students ul img {
+    width: 20px;
+    height: 20px;
+}
+
+.class-parent .moduless {
+    width: 80%;
+    min-height: 300px;
+    font-size: 18px;
+    padding: 10px 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-left: none;
+    position: relative;
+    padding: 20px;
+}
+
+.class-parent .moduless .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+    padding: 10px;
+}
+
+.class-parent .moduless .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5%;
+    background-color: #3b84c3;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+}
+
+.relative {
+    position: absolute;
+    right: -5%;
+    top: -5%;
+}
+
+.delete-module img {
+    width: 30px;
+    height: 30px;
+}
+
+.class-parent .moduless .grid-item .circle {
+    top: 2%;
+    left: 2%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #394547;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-parent .moduless .grid-item h4 {
+    margin: 0 10px 5px 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.class-parent .moduless .grid-item h5 {
+    color: #3c3c3c;
+    font-size: 18px;
+}
+
+/* Add module   */
+.AddModule {
+    width: 200px;
+    margin: 5px auto;
+    /* background-color: #394547; */
+    padding: 7px 19px;
+    color: white;
+    border-radius: 11px;
+    background-color: #60e157;
+    /* text-align: center; */
+
+}
+
+.AddModule select {
+    display: block;
+    width: 200px;
+    border: none;
+    height: 20px;
+}
+
+.AddModule select option {
+    background-color: #ffffff;
+    ;
+}
+
+.AddModule label {
+    color: #333;
+    font-size: 15px;
+}
+
+.AddModule form input {
+    border: none;
+    width: 94%;
+    height: 21px;
+    color: black;
+
+}
+
+.AddModule .btn {
+    background-color: black;
+    font-weight: 900;
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+
+}
+
+.AddModule form {
+    text-align: left;
+}
+
+.link-add {
+    background-color: black;
+    font-weight: 900px;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*   Module   */
+.module-name {
+    height: 200px;
+    margin: 0 0 20px 0;
+    background-color: #34bdff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-name h1 {
+    margin: 0;
+    color: white;
+}
+
+.modules {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px 30px;
+}
+
+.module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid rgb(232, 149, 5);
+    background-color: #34bdff;
+    padding-bottom: 20px;
+}
+
+.module>div {
+    height: 50%;
+    align-items: center;
+    display: flex;
+    font-weight: 800;
+}
+
+.module a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.page_module {
+    display: flex;
+    min-height: 400px;
+    height: 100%;
+}
+
+.page_module>div {
+
+    padding: 20px;
+    font-size: 20px;
+}
+
+.page_module>div>h4 {
+    text-align: center;
+}
+
+.page_module>div {
+    margin: 0 20px;
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.page_module>div:first-of-type {
+    width: 25%;
+    height: 73%;
+
+}
+
+.page_module>div:last-of-type {
+    width: 70%;
+}
+
+.cour {
+    position: relative;
+    width: 90%;
+    margin: 15px auto;
+    padding: 2% 0% 2% 3%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34bdff;
+}
+.cour .relative{
+    right: -1.6%;
+    top: -20%;
+}
+.cour img {
+    width: 25px;
+    height: 25px;
+}
+
+.cour .info {
+    margin-left: 2%;
+    width: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.cour .info button {
+    width: 100%;
+    border: none;
+    background-color: inherit;
+}
+
+.cour .info h3 {
+    margin: 0px;
+    padding: 0;
+    font-size: 15px;
+    color: #232323;
+}
+
+.cour .info span {
+    color: #444;
+    font-size: 11px;
+}
+
+.cour .link {
+    position: relative;
+    height: 41px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.cour .link span {
+    display: block;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.cour .link span:first-of-type {
+    top: 0%;
+}
+
+.cour .link span:nth-of-type(2) {
+    top: 15%;
+}
+
+.cour .link span:last-of-type {
+    top: 30%;
+}
+
+/*  Add Student Page */
+.editProfile {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.editProfile .container {
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.editProfile h2 {
+    color: #555;
+}
+
+.editProfile form {
+    padding: 26px 32px;
+    background-color: #eeeded;
+}
+
+.editProfile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.editProfile form>div:not(:last-of-type) input {
+    width: 80%;
+    color: #4b4949;
+    font-weight: 700;
+}
+
+.editProfile form>div:last-of-type input {
+    background-color: #394547;
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.editProfile label {
+    color: #5d5c5c;
+}
+
+.editProfile form .password {
+    position: relative;
+}
+
+.editProfile form .show {
+    position: absolute;
+    color: #394547;
+    font-weight: 800;
+    top: 56%;
+    right: 8%;
+    cursor: pointer;
+}

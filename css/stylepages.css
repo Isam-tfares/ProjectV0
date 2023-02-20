@@ -1,0 +1,498 @@
+.container {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.module-name {
+    height: 200px;
+    margin: 0 0 20px 0;
+    background-color: #34bdff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-name h1 {
+    margin: 0;
+    color: white;
+}
+
+.modules {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px 30px;
+}
+
+.module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid rgb(232, 149, 5);
+    background-color: #34bdff;
+    padding-bottom: 20px;
+}
+
+.module>div {
+    height: 50%;
+    align-items: center;
+    display: flex;
+    font-weight: 800;
+}
+
+.module a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.page_module {
+    display: flex;
+    min-height: 400px;
+    height: 100%;
+}
+
+.page_module>div {
+
+    padding: 20px;
+    font-size: 20px;
+}
+
+.page_module>div>h4 {
+    text-align: center;
+}
+
+.page_module>div {
+    margin: 0 20px;
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.page_module>div:first-of-type {
+    width: 25%;
+    height: 73%;
+
+}
+
+.page_module>div:last-of-type {
+    width: 70%;
+}
+
+.personnes {}
+
+.personnes-grp {
+    position: relative;
+}
+
+.personne {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.personne img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.personnes-grp h2 {
+    padding-left: 10px;
+    color: #147ef3;
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+}
+
+.personnes-grp h2 span {
+    position: absolute;
+    right: 2%;
+    font-size: 18px;
+    top: 11%;
+}
+
+.personnes-grp h4 {
+    font-size: 15px;
+    color: #5e5a5a;
+    letter-spacing: .5px;
+    margin-right: 20px;
+}
+
+.personnes-grp h4:nth-of-type(2) {
+    font-size: 14px;
+    color: #1f78ff;
+    position: absolute;
+    right: -1%;
+}
+
+h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.personnes-grp>hr {
+    background-color: #147ef3;
+    height: 1px;
+}
+
+.cour {
+    width: 90%;
+    margin: 15px auto;
+    padding: 2% 0% 2% 3%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34bdff;
+}
+
+.cour img {
+    width: 25px;
+    height: 25px;
+}
+
+.cour .info {
+    margin-left: 2%;
+    width: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.cour .info button {
+    width: 100%;
+    border: none;
+    background-color: inherit;
+}
+
+.cour .info h3 {
+    margin: 0px;
+    padding: 0;
+    font-size: 15px;
+    color: #232323;
+}
+
+.cour .info span {
+    color: #444;
+    font-size: 11px;
+}
+
+.cour .link {
+    position: relative;
+    height: 41px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.cour .link span {
+    display: block;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.cour .link span:first-of-type {
+    top: 0%;
+}
+
+.cour .link span:nth-of-type(2) {
+    top: 15%;
+}
+
+.cour .link span:last-of-type {
+    top: 30%;
+}
+
+/*  ############ Add button ##########  */
+.add {
+    width: 86px;
+    display: block;
+    margin: 5px auto;
+    background-color: #147ef3;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 900;
+}
+
+#addCour {
+    display: block;
+    margin-top: 20px;
+}
+
+#addCour form {
+    background-color: antiquewhite;
+    width: 50%;
+    margin: 20px auto;
+    padding: 5%;
+}
+
+/* haeder  profile */
+#account {
+    position: relative;
+}
+
+#Profile {
+    position: absolute;
+    top: 35%;
+    right: 110%;
+    z-index: 3;
+
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile span {
+    position: absolute;
+    top: 54%;
+    right: 145%;
+    font-weight: 900;
+    transform: rotateZ(180deg);
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.headerImg {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    right: 0%;
+    border-radius: 50%;
+}
+
+.menu {
+    width: 130px;
+    position: absolute;
+    background-color: #394547;
+    top: 110%;
+    height: 90px;
+    right: 38%;
+}
+
+.menu ul {
+    width: 130px;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    width: 130px;
+    height: 30px;
+}
+
+.menu ul li a {
+    width: 100px;
+    padding: 5px 15px;
+    height: 20px;
+}
+
+.menu ul li a:hover {
+    background-color: #1fc7cf;
+}
+
+.hide {
+    display: none;
+}
+
+/*############### Profile #################"                        */
+.ShowProfile {
+    margin: 0;
+
+    text-align: center;
+}
+
+.ShowProfile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.ShowProfile .profilePicture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.ShowProfile .container>div:not(:last-of-type) {
+    width: 100%;
+    width: 100%;
+    padding: 32px;
+    border: 2px solid black;
+    background-color: #dcdbdb;
+}
+
+.ShowProfile .container>div:last-of-type {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    position: relative;
+}
+
+.ShowProfile .container>div:last-of-type a {
+    margin-top: 20px;
+    color: white;
+    font-weight: 900;
+    background-color: #394547;
+    padding: 16px 20px;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+
+}
+
+.ShowProfile .container>div:last-of-type ::before {
+    content: "";
+    background-color: #394547;
+    width: 29px;
+    height: 49px;
+    position: absolute;
+    top: -32%;
+    left: -12%;
+    border-radius: 50%;
+}
+
+.ShowProfile .container>div:last-of-type ::after {
+    content: "";
+    background-color: #394547;
+    width: 29px;
+    height: 49px;
+    position: absolute;
+    top: -32%;
+    right: -12%;
+    border-radius: 50%;
+}
+
+.editProfile {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.editProfile .container {
+    max-width: 700Px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editProfile h2 {
+    color: #555;
+}
+
+.editProfile form {
+    padding: 26px 32px;
+    background-color: #eeeded;
+}
+
+.editProfile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.editProfile form>div:not(:last-of-type) input {
+    width: 80%;
+    color: #4b4949;
+    font-weight: 700;
+}
+
+.editProfile form>div:last-of-type input {
+    background-color: #394547;
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.editProfile label {
+    color: #5d5c5c;
+}
+
+.editProfile form .password {
+    position: relative;
+}
+
+.editProfile form .show {
+    position: absolute;
+    color: #394547;
+    font-weight: 800;
+    top: 56%;
+    right: 8%;
+    cursor: pointer;
+}
+
+/* Notes */
+.Table-note {
+    width: 90%;
+    margin: 10px auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.note {
+    border: none;
+    color: black;
+    font-size: 16px;
+    width: 50px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.button-note {
+    width: 80px;
+    background-color: #1876a5;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.form-note {
+    display: flex;
+    align-items: center;
+}
+.form-note div{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
